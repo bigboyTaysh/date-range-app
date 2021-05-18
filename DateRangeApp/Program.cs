@@ -1,4 +1,5 @@
 ﻿using System;
+using ClassLibrary;
 
 namespace DateRangeApp
 {
@@ -6,7 +7,18 @@ namespace DateRangeApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            if (args.Length == 1 && args[0] == "--help")
+            {
+                Info.WriteHelp();
+            }
+            else if (args.Length == 2)
+            {
+                Info.IncorrectParameters();
+            } 
+            else
+            {
+                Info.IncorrectNumberOfParameters();
+            }
         }
     }
 }

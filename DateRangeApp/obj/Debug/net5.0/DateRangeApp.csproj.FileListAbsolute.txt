@@ -14,3 +14,6 @@ C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\obj\Deb
 C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\obj\Debug\net5.0\ref\DateRangeApp.dll
 C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\obj\Debug\net5.0\DateRangeApp.pdb
 C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\obj\Debug\net5.0\DateRangeApp.genruntimeconfig.cache
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\bin\Debug\net5.0\ClassLibrary.dll
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\bin\Debug\net5.0\ClassLibrary.pdb
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\obj\Debug\net5.0\DateRangeApp.csproj.CopyComplete

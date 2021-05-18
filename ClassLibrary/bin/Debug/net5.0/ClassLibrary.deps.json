@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "DateRangeApp/1.0.0": {
-        "dependencies": {
-          "ClassLibrary": "1.0.0"
-        },
-        "runtime": {
-          "DateRangeApp.dll": {}
-        }
-      },
       "ClassLibrary/1.0.0": {
         "runtime": {
           "ClassLibrary.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "DateRangeApp/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "ClassLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
