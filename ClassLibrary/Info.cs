@@ -15,15 +15,15 @@ namespace ClassLibrary
             Console.WriteLine(" date1: ");
         }
 
-        public static void IncorrectNumberOfParameters()
+        public static void IncorrectNumberOfParameters(string[] args)
         {
-            Console.WriteLine("Incorrect number of parameters");
+            Console.WriteLine($"Incorrect number of parameters: {args.Length}");
             RunInfo();
         }
 
-        public static void IncorrectParameters()
+        public static void IncorrectParameter(string arg)
         {
-            Console.WriteLine("Incorrect parameters");
+            Console.WriteLine($"Incorrect parameter: {arg}");
             RunInfo();
         }
 

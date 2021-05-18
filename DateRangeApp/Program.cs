@@ -7,17 +7,26 @@ namespace DateRangeApp
     {
         static void Main(string[] args)
         {
+            ConvertDate converter = new ConvertDate();
+
             if (args.Length == 1 && args[0] == "--help")
             {
                 Info.WriteHelp();
             }
             else if (args.Length == 2)
             {
-                Info.IncorrectParameters();
+                try
+                {
+                    converter.ParseDates(args);
+                }
+                catch (IncorrectFormatException e)
+                {
+                    Console.WriteLine(e);
+                }
             } 
             else
             {
-                Info.IncorrectNumberOfParameters();
+                Info.IncorrectNumberOfParameters(args);
             }
         }
     }
