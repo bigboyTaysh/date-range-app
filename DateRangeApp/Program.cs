@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using ClassLibrary;
 
 namespace DateRangeApp
@@ -17,9 +18,19 @@ namespace DateRangeApp
             {
                 try
                 {
-                    converter.ParseDates(args);
+                    DateTime date1 = converter.ParseDate(args[0]),
+                        date2 = converter.ParseDate(args[1]);
+
+                    converter.CheckDates(date1, date2);
+
+
                 }
                 catch (IncorrectFormatException e)
+                {
+                    Console.WriteLine(e.Message);
+                    Info.RunInfo();
+                }
+                catch (IncorrectRelationshipException e)
                 {
                     Console.WriteLine(e.Message);
                     Info.RunInfo();

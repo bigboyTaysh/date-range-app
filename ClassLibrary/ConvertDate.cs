@@ -9,35 +9,32 @@ namespace ClassLibrary
 {
     public class ConvertDate
     {
-        public List<DateTime> ParseDates(string[] dates)
+        public DateTime ParseDate(string date)
         {
-            DateTime date1, date2;
+            DateTime parsedDate;
+            string format = "dd.MM.yyyy";
 
             try
             {
-                date1 = ParseDate(dates[0]);
+                parsedDate = DateTime.ParseExact(date, format, DateTimeFormatInfo.InvariantInfo, DateTimeStyles.None);
             } 
             catch (FormatException)
             {
-                throw new IncorrectFormatException($"date1 '{dates[0]}'");
+                throw new IncorrectFormatException($"date '{date}'");
             }
 
-            try
-            {
-                date2 = ParseDate(dates[1]);
-            }
-            catch (FormatException)
-            {
-                throw new IncorrectFormatException($"date2 '{dates[1]}'");
-            }
-
-            return new List<DateTime>() { date1, date2 };
+            return parsedDate;
         }
 
-        public DateTime ParseDate(string dateFrom)
+        public void CheckDates(DateTime date1, DateTime date2)
         {
-            string format = "dd.MM.yyyy";
-            return DateTime.ParseExact(dateFrom, format, DateTimeFormatInfo.InvariantInfo, DateTimeStyles.None);
+            int result = DateTime.Compare(date1, date2);
+
+            if (result == 0)
+                throw new IncorrectRelationshipException(date1.ToShortDateString(), "is the same time as", date2.ToShortDateString());
+            else if (result > 0)
+                throw new IncorrectRelationshipException(date1.ToShortDateString(), "is later than", date2.ToShortDateString());
         }
+
     }
 }
