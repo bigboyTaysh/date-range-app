@@ -36,5 +36,19 @@ namespace ClassLibrary
                 throw new IncorrectRelationshipException(date1.ToShortDateString(), "is later than", date2.ToShortDateString());
         }
 
+        public string GetDateRange(DateTime date1, DateTime date2)
+        {
+            string range = "", day1, month1;
+
+            if(date1.Year == date2.Year && date1.Month == date2.Month)
+            {
+                day1 = date1.Day < 10 ? $"0{date1.Day}" : $"{date1.Day}";
+
+                range = $"{day1}-{date2.ToShortDateString()}";
+            }
+
+            return range;
+        }
+
     }
 }

@@ -23,7 +23,7 @@ namespace DateRangeApp
 
                     converter.CheckDates(date1, date2);
 
-
+                    Console.WriteLine(converter.GetDateRange(date1, date2));
                 }
                 catch (IncorrectFormatException e)
                 {
