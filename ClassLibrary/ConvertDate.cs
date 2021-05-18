@@ -38,16 +38,25 @@ namespace ClassLibrary
 
         public string GetDateRange(DateTime date1, DateTime date2)
         {
-            string range = "", day1, month1;
+            string part = "", day1 = "", month1 = "";
 
-            if(date1.Year == date2.Year && date1.Month == date2.Month)
+            if(date1.Year != date2.Year)
+            {
+                part = date1.ToShortDateString();
+            } 
+            else if (date1.Month != date2.Month)
             {
                 day1 = date1.Day < 10 ? $"0{date1.Day}" : $"{date1.Day}";
+                month1 += date1.Month < 10 ? $"0{date1.Month}" : $"{date1.Month}";
 
-                range = $"{day1}-{date2.ToShortDateString()}";
+                part = $"{day1}.{month1}";
+            }
+            else
+            {
+                part = date1.Day < 10 ? $"0{date1.Day}" : $"{date1.Day}";
             }
 
-            return range;
+            return $"{part}-{date2.ToShortDateString()}";
         }
 
     }
