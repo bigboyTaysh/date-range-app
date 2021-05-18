@@ -1,0 +1,16 @@
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\bin\Debug\net5.0\DateRangeApp.exe
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\bin\Debug\net5.0\DateRangeApp.deps.json
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\bin\Debug\net5.0\DateRangeApp.runtimeconfig.json
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\bin\Debug\net5.0\DateRangeApp.runtimeconfig.dev.json
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\bin\Debug\net5.0\DateRangeApp.dll
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\bin\Debug\net5.0\ref\DateRangeApp.dll
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\bin\Debug\net5.0\DateRangeApp.pdb
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\obj\Debug\net5.0\DateRangeApp.csprojAssemblyReference.cache
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\obj\Debug\net5.0\DateRangeApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\obj\Debug\net5.0\DateRangeApp.AssemblyInfoInputs.cache
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\obj\Debug\net5.0\DateRangeApp.AssemblyInfo.cs
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\obj\Debug\net5.0\DateRangeApp.csproj.CoreCompileInputs.cache
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\obj\Debug\net5.0\DateRangeApp.dll
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\obj\Debug\net5.0\ref\DateRangeApp.dll
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\obj\Debug\net5.0\DateRangeApp.pdb
+C:\Users\wolak\OneDrive\INFORMATYKA\rekrutacja\DateRangeApp\DateRangeApp\obj\Debug\net5.0\DateRangeApp.genruntimeconfig.cache
