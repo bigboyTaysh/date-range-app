@@ -21,7 +21,8 @@ namespace DateRangeApp
                 }
                 catch (IncorrectFormatException e)
                 {
-                    Console.WriteLine(e);
+                    Console.WriteLine(e.Message);
+                    Info.RunInfo();
                 }
             } 
             else

@@ -11,7 +11,7 @@ namespace ClassLibrary
     public class IncorrectFormatException : Exception
     {
         public IncorrectFormatException() { }
-        public IncorrectFormatException(string message) : base(message) { }
+        public IncorrectFormatException(string message) : base($"date1 '{message}' is not in the correct format") {}
         public IncorrectFormatException(string message, Exception inner) : base(message, inner) { }
         protected IncorrectFormatException(
           System.Runtime.Serialization.SerializationInfo info,

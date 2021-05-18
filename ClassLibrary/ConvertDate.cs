@@ -17,11 +17,10 @@ namespace ClassLibrary
             try
             {
                 date1 = ParseDate(dates[0]);
-                date2 = ParseDate(dates[1]);
             } 
             catch (FormatException)
             {
-                throw new IncorrectFormatException("Wrong date format");
+                throw new IncorrectFormatException(dates[0]);
             }
         }
 
