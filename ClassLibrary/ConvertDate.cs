@@ -9,9 +9,8 @@ namespace ClassLibrary
 {
     public class ConvertDate
     {
-        public void ParseDates(string[] dates)
+        public List<DateTime> ParseDates(string[] dates)
         {
-
             DateTime date1, date2;
 
             try
@@ -20,8 +19,19 @@ namespace ClassLibrary
             } 
             catch (FormatException)
             {
-                throw new IncorrectFormatException(dates[0]);
+                throw new IncorrectFormatException($"date1 '{dates[0]}'");
             }
+
+            try
+            {
+                date2 = ParseDate(dates[1]);
+            }
+            catch (FormatException)
+            {
+                throw new IncorrectFormatException($"date2 '{dates[1]}'");
+            }
+
+            return new List<DateTime>() { date1, date2 };
         }
 
         public DateTime ParseDate(string dateFrom)
